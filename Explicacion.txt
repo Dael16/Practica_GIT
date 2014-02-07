@@ -1,0 +1,21 @@
+Es necesario crear un archivo con el nombre ".gitignore" (sin las comillas) en el que indicaremos por medio de expresiones regulares patrones de nombre de archivos, o 
+explícitamente nombres de archivos que deseamos git ignore para el control de versionado, cada una de estas expresiones o nombres por cada renglón.
+
+Por ejemplo: 
+#----------------------------
+#contenido de .gitignore
+#----------------------------
+#ignorar  los archivos con la extensión .bak
+*.bak
+#archivos que inicien con "tmp_"
+tmp_*
+#indicando un archivo explicitamente
+DeprecatedClass.java
+#archivos txt ennumerados del 1 al 9
+[1-9].txt
+#Aún cuando archivos .bak son ignorados podemos indicar alguna excepción mediante el símbolo de negación !
+!excepcion.bak
+#Ignorando el contenido de todo un subdirectorio
+subdir/
+#ignorando un directorio en la raíz
+/Dir
